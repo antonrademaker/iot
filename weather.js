@@ -6,10 +6,10 @@ var device = require('azure-iot-device');
 var Particle = require("particle-io");
 
 // Set up the access credentials for Particle and Azure
-var token = process.env.PARTICLE_KEY || 'b42485e39c50733537091b885d6f9bd6ecb28b65';
-var deviceId = process.env.DEVICE_NAME || '42003c000e47343233323032';
+var token = process.env.PARTICLE_KEY || '=';
+var deviceId = process.env.DEVICE_NAME || '';
 var location = process.env.DEVICE_LOCATION || 'THE LOCATION OF THE PARTICLE PHOTON DEVICE';
-var connectionString = process.env.IOTHUB_CONN || 'HostName=AntonRademaker-IOT-Labs.azure-devices.net;DeviceId=42003c000e47343233323032;SharedAccessKey=giX3thpGCvMQ48wssgfiE9Gza6u7yA0JBxQoIaymPtw=';
+var connectionString = process.env.IOTHUB_CONN || '';
 
 // Create a Johnny-Five board instance to represent your Particle Photon
 // Board is simply an abstraction of the physical hardware, whether is is a 
